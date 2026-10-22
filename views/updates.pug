@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        a(href="/") Retour à l'accueil
+        h1 Ajouter une plante
+        form(action="/update-cobj" method="POST")
+            label Name
+            input(type="text" name="name")
+            label Espèce
+            input(type="text" name="espece")
+            label Arrosage (tous les X jours)
+            input(type="number" name="arrosage_jours")
+            label Exposition
+            input(type="text" name="exposition")
+            button(type="submit") Envoyer
