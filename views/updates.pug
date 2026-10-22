@@ -15,5 +15,8 @@ html
             label Arrosage (tous les X jours)
             input(type="number" name="arrosage_jours")
             label Exposition
-            input(type="text" name="exposition")
+            select(name="exposition")
+                option(value="soleil") Soleil
+                option(value="mi_ombre") Mi-ombre
+                option(value="ombre") Ombre
             button(type="submit") Envoyer
