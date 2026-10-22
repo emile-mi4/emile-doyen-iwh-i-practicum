@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        a(href="/update-cobj") Ajouter un élément
+        h1 Mes plantes
+        table
+            tr
+                th Name
+                th Espèce
+                th Arrosage (jours)
+                th Exposition
+            each plante in data
+                tr
+                    td #{plante.properties.name}
+                    td #{plante.properties.espece}
+                    td #{plante.properties.arrosage_jours}
+                    td #{plante.properties.exposition}
